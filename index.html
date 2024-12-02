@@ -6,23 +6,56 @@
     <title>Document</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <div class="chatbot-popup">
+<body class="flex justify-center items-center h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="chatbot-popup w-[420px] bg-white overflow-hidden rounded-xl shadow-2xl  ">
         <!-- chat-header -->
-        <div class="chat-header">
-            <div class="header-info">
-                <img src="technical-support.png" alt="bot" width="50" height="50">
-                <h2 class="logo-text">ChatBot</h2>
+        <div class="chat-header flex items-center justify-between bg-blue-700 px-[15px] py-[22px]">
+            <div class="header-info flex gap-[10px] items-center ">
+                <img src="technical-support.png" alt="bot" width="25" height="25" class="chatbot-logo bg-white rounded-lg">
+                <h2 class="logo-text text-white font-semibold text-2xl">ChatBot</h2>
             </div>
-            <button type="button" title="button">
+            <button type="button" title="button" class=" close-chatbot border-none text-white h-[40px] w-[40px]  rounded-full text-2xl cursor-pointer hover:bg-blue-950" >
                 <i class="fa-solid fa-arrow-down"></i>
               </button>
             </div>
   
             <!-- chat-body -->
-            <div class="chat-body">
+            <div class="chat-body px-[25px] py-[22px] flex gap-[20px] overflow-y-auto  flex-col  h-[460px]mb-[82px]">
+               <div class="message bot-message">
+                <img src="technical-support.png" alt="bot" width="50" height="50">
+                 <div class="message-text px-[12px] py-[16px]">
+                   Hey there 👋!! <br>
+                    How can i help you today
+                 </div>
+               </div>
+               <div class="message-user-message">
+                <div class="message-text">
+                    Lorem ipsum dolor sit amet. ipsum dolor sit amet.
+                </div>
+               </div>
 
+               <!-- chatboot footer -->
+             <div class="chat-footer ">
+                <form action="#" class="chat-form">
+                    <textarea placeholder="Message" id="" class="message-input"></textarea>
+                    <div class="chat-controls">
+                       <button type="button" title="button">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </button> 
+
+                    <button type="button" title="button">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button> 
+
+                    <button type="submit" title="button">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button> 
+
+                    </div>
+                </form>
+             
             </div>
     </div>
 </body>
